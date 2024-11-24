@@ -13,6 +13,11 @@ int fib(int n)
 int main() {
     int liczba;
     cin >> liczba;
+    if(liczba<0)
+    {
+	    cout<<"Podano ujemna liczbe!"<<endl;
+	    return 0;
+    }
     cout << "Podana liczba: " << liczba << endl;
     cout << "Wartosc (Fibonacci): "<<fib(liczba)<<endl;
     return 0;
